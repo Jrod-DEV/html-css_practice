@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EpicFilms - Login</title>
-  <link rel="icon" href="../src/images/favicon/favicon.ico">
-
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicFilms - Login</title>
+    <link rel="icon" href="../src/images/favicon/favicon.ico" />
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/login.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">EPIC FILMS</div>
+      </header>
+      <main>
+        <section class="login__form">
+          <h1>Login</h1>
+          <form action="index.html">
+            <!-- Form group username -->
+            <div class="form__group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <!-- Form group password -->
+            <div class="form__group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <!-- Accepting Remember -->
+            <div class="form__group remember">
+              <label for="terms">Remember me</label>
+              <input type="checkbox" name="remember" id="remember" />
+            </div>
+            <!-- Login Button -->
+            <div class="form__actions">
+              <input type="submit" class="login__button" value="Login!" />
+              <a href="#" class="no__password">Forgot your password?</a>
+            </div>
+          </form>
+          <div>
+              <p>You don´t have an account?<a href="#">Sign up here!</a></p>
+          </div>
+        </section>
+      </main>
+      
+      <footer class="footer">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">User Conditions</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
