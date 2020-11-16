@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicFilms - Login</title>
-    <link rel="icon" href="../src/images/favicon/favicon.ico" />
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="logo">EPIC FILMS</div>
+    <div class="login__container">
+      <header class="header">
+        <div class="login__header-logo">
+          <p>WELCOME TO</p>
+          <span>EPICFILMS</span>
+        </div>
       </header>
       <main>
         <section class="login__form">
-          <h1>Login</h1>
+          <h1>Access your account</h1>
           <form action="index.html">
             <!-- Form group username -->
             <div class="form__group">
               <label for="username">Username</label>
               <input
+                class="textbox"
                 type="text"
                 name="username"
+                autocomplete="username"
                 placeholder="Username"
                 required
               />
@@ -32,9 +37,11 @@
             <div class="form__group">
               <label for="password">Password</label>
               <input
+                class="textbox"
                 type="password"
                 name="password"
                 id="password"
+                autocomplete="new-password"
                 placeholder="Password"
                 required
               />
@@ -51,13 +58,13 @@
             </div>
           </form>
           <div>
-              <p>You don´t have an account?<a href="#">Sign up here!</a></p>
+            <p>You don´t have an account?<a href="#">Sign up here!</a></p>
           </div>
         </section>
       </main>
-      
+
       <footer class="footer">
-        <ul>
+        <ul class="footer__links">
           <li><a href="#">Privacy</a></li>
           <li><a href="#">User Conditions</a></li>
           <li><a href="#">Cookies</a></li>
