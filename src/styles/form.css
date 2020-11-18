@@ -1,0 +1,56 @@
+.login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    line-height: 40px;
+    height: 70vh;
+    color: var(--color);
+}
+
+.form__actions {
+    white-space: nowrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+.login__form h1 {
+    text-align: center;
+}
+
+.login__form h2,
+h3 {
+    text-align: center;
+}
+
+.login__form p {
+    text-align: center;
+}
+
+.form__group label {
+    display: block;
+  }
+
+.form__group {
+    min-width: 300px;
+    max-width: 480px;
+    margin-bottom: 20px;
+  }
+  
+  .form__group--textbox {
+    width: 85%;
+    border: solid 2px;
+    border-radius: 10px;
+    box-sizing: content-box;
+    font-size: 1rem;
+    padding: 0.75rem 0.75rem;
+  }
+  
+  .login__header--logo {
+      position: fixed;
+      top: 10px;
+  }

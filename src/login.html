@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/common.css">
   </head>
   <body>
     <div class="login__container">
       <header class="header">
-        <div class="login__header-logo">
-          <p>WELCOME TO</p>
-          <span>EPICFILMS</span>
+        <div class="login__header--logo">
+        <img src="./images/logo/epicfilms_blanco.png" alt="logo">
         </div>
       </header>
       <main>
@@ -25,7 +27,7 @@
             <div class="form__group">
               <label for="username">Username</label>
               <input
-                class="textbox"
+                class="form__group--textbox"
                 type="text"
                 name="username"
                 autocomplete="username"
@@ -37,7 +39,7 @@
             <div class="form__group">
               <label for="password">Password</label>
               <input
-                class="textbox"
+                class="form__group--textbox"
                 type="password"
                 name="password"
                 id="password"
@@ -47,8 +49,8 @@
               />
             </div>
             <!-- Accepting Remember -->
-            <div class="form__group remember">
-              <label for="terms">Remember me</label>
+            <div class="form__group--remember checkbox" >
+              <label for="remember">Remember me</label>
               <input type="checkbox" name="remember" id="remember" />
             </div>
             <!-- Login Button -->
@@ -58,7 +60,7 @@
             </div>
           </form>
           <div>
-            <p>You don´t have an account?<a href="#">Sign up here!</a></p>
+            <p>No account?<a href="#">Sign up here!</a></p>
           </div>
         </section>
       </main>
@@ -66,7 +68,7 @@
       <footer class="footer">
         <ul class="footer__links">
           <li><a href="#">Privacy</a></li>
-          <li><a href="#">User Conditions</a></li>
+          <li><a href="#">Conditions</a></li>
           <li><a href="#">Cookies</a></li>
         </ul>
       </footer>

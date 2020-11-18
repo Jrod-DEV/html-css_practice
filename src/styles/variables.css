@@ -1,5 +1,20 @@
 :root {
   --font-size: 16px;
-  --text-color: black;
+  --color: white;
   --header-height: 5rem;
+  --background-color: linear-gradient(
+    225deg,
+    #a9a045 0,
+    #99a042 8.33%,
+    #899f3f 16.67%,
+    #759d3e 25%,
+    #5f9b3e 33.33%,
+    #449740 41.67%,
+    #179343 50%,
+    #008e48 58.33%,
+    #008a4f 66.67%,
+    #008658 75%,
+    #008262 83.33%,
+    #007e6e 91.67%,
+    #007b7a 100%)
 }
