@@ -1,4 +1,7 @@
 .login__form {
+  min-width: 300px;
+    max-width: 480px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

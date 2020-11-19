@@ -1,23 +1,12 @@
- /* Mobile first CSS design */ 
+/* Mobile first CSS design */
 
 .header {
-  display: block;
-  justify-content: center;
-  position: fixed;
-  top: 5%;
-}
-
-.header h1 {
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-
-.login__header-logo span {
-  align-items: center;
-  display: flex;
-  margin-left: 10px;
-  color: var(--text-color);
+    position: fixed;
+    top: 0px;
+    height: 5rem;
+    width: 100vw;
+    overflow: hidden;
+    padding: 20px 10px;
 }
 
 .login__header--logo img {
@@ -38,12 +27,10 @@ body {
   margin: auto;
   height: 100vh;
   align-items: center;
-  border: ridge;
 }
 
-
 .login__button {
-  padding: 1rem 0.75rem;
+  padding: 0.75rem 0.85rem;
   width: 30%;
   font-size: 1rem;
   box-sizing: content-box;
@@ -52,9 +39,19 @@ body {
   border-radius: 10px;
 }
 
- /*  Media query for desktop*/ 
- @media only screen and (min-width: 600px) {
-     .login_container {
-         background-image: url(../images/cool-background.png);
-     }
- }
+/*  Media query for desktop*/
+@media only screen and (min-width: 768px) {
+  .login__container {
+    background: url(../images/camera-3985711_1280.jpg) center center;
+    background-size: cover;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login__form {
+    justify-content: flex-start;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
