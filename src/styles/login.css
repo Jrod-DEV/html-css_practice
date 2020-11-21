@@ -1,12 +1,12 @@
 /* Mobile first CSS design */
 
 .header {
-    position: fixed;
-    top: 0px;
-    height: 5rem;
-    width: 100vw;
-    overflow: hidden;
-    padding: 20px 10px;
+  position: fixed;
+  top: 0px;
+  height: 5rem;
+  width: 100vw;
+  overflow: hidden;
+  padding: 20px 10px;
 }
 
 .login__header--logo img {

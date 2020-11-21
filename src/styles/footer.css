@@ -1,15 +1,15 @@
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 1rem;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .footer__links {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
