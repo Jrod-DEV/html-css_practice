@@ -4,36 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicFilms- Comming Soon</title>
-    <link rel="icon" href="./src/images/favicon/favicon.ico" />
+    <link rel="icon" href="images/favicon/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/common.css" />
   </head>
   <body>
     <header>
       <nav class="navbar" id="nabvar">
-        <div class="navbar__logo" id="navbar">
+        <div class="logo">
           <figure>
             <a href="index.html"
               ><img src="images/logo/epicfilms_blanco.png" alt="White-logo"
             /></a>
           </figure>
         </div>
-
-        <ul class="navbar__list">
-          <li class="nabvar__list--item"><a href="#trending">Trending</a></li>
-          <li class="nabvar__list--item"><a href="#series">Series</a></li>
-          <li class="nabvar__list--item"><a href="#movies">Movies</a></li>
-          <li class="nabvar__list--item"><a href="#">My profile</a></li>
-          <li class="nabvar__list--item"><a href="login.html">Sign out</a></li>
-        </ul>
+        <div class="navbar__menu">
+          <div class="navbar__menu--profile">
+            <img src="https://img.icons8.com/color/48/000000/menu--v1.png"/>
+          </div>
+          <ul class="navbar__menu--list">
+            <li class="nabvar__list--item"><a href="#trending">Trending</a></li>
+            <li class="nabvar__list--item"><a href="#series">Series</a></li>
+            <li class="nabvar__list--item"><a href="#movies">Movies</a></li>
+            <li class="nabvar__list--item"><a href="#">My profile</a></li>
+            <li class="nabvar__list--item">
+              <a href="login.html">Sign out</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main class="main">
-        
       <!-- TRENDING SECTION -->
       <section class="card__list" id="trending">
-        <h1 class="card__list--title">
-          Trending Movies and Series on <span>EpicFilms</span>
-        </h1>
+        <h1 class="card__list--title">Trending</h1>
 
         <!-- CARD 0 -->
         <article class="info__card">
@@ -49,7 +57,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -69,7 +77,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -89,7 +97,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -99,7 +107,10 @@
         <article class="info__card">
           <a href="detail.html">
             <div class="info__card--cover">
-              <img src="images/movie_cover/hombres de honor.jpg" alt="Hombres De Honor" />
+              <img
+                src="images/movie_cover/hombres de honor.jpg"
+                alt="Hombres De Honor"
+              />
             </div>
             <div class="card__content">
               <span class="card__content--rating">IMDB 4.7</span>
@@ -109,7 +120,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -119,7 +130,10 @@
         <article class="info__card">
           <a href="detail.html">
             <div class="info__card--cover">
-              <img src="images/movie_cover/la milla verde.jpg" alt="La Milla Verde" />
+              <img
+                src="images/movie_cover/la milla verde.jpg"
+                alt="La Milla Verde"
+              />
             </div>
             <div class="card__content">
               <span class="card__content--rating">IMDB 4.7</span>
@@ -129,7 +143,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -139,7 +153,10 @@
         <article class="info__card">
           <a href="detail.html">
             <div class="info__card--cover">
-              <img src="images/movie_cover/salvar al soldado ryan.jpg" alt="Salvar al soldado Ryan" />
+              <img
+                src="images/movie_cover/salvar al soldado ryan.jpg"
+                alt="Salvar al soldado Ryan"
+              />
             </div>
             <div class="card__content">
               <span class="card__content--rating">IMDB 4.7</span>
@@ -149,7 +166,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -169,7 +186,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -194,7 +211,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -214,7 +231,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -234,7 +251,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -254,7 +271,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -274,7 +291,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -294,7 +311,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -319,7 +336,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -339,7 +356,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -359,7 +376,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -379,7 +396,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -399,7 +416,7 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
@@ -419,12 +436,20 @@
             <div class="card__description">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus?
+                nam ullam culpa assumenda vel cumque repellendus.
               </p>
             </div>
           </a>
         </article>
       </section>
     </main>
+
+    <footer class="footer">
+      <ul class="footer__links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#"> User Conditions</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
