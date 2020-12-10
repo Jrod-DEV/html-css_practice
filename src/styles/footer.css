@@ -1,15 +1,23 @@
-/* .footer {
-  position: absolute;
-  bottom: 1rem;
-  left: 0;
-  width: 100%;
-  text-align: center;
+.footer {
+    background: var(--soft-black);
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 8rem;
 }
- */
-.footer__links {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  font-size: 0.9rem;
-  padding: 1rem;
+
+footer .footer__links li {
+    list-style: none;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+footer a:hover {
+    color: var(--grey-info);
 }

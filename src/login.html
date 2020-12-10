@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicFilms - Login</title>
     <link rel="icon" href="./images/favicon/favicon.ico" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/login.css" />
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/common.css" />
   </head>
   <body>
     <div class="login__container">
       <header class="header">
         <figure class="login__header--logo">
-        <img src="images/logo/epicfilms_blanco.png" alt="logo">
+          <img src="images/logo/epicfilms_blanco.png" alt="logo" />
         </figure>
       </header>
       <main>
         <section class="login__form">
           <h1>Access your account</h1>
-          <form action="index.html">
+          <form class="form" action="index.html">
             <!-- Form group username -->
             <div class="form__group">
               <label for="username">Username</label>
@@ -49,7 +54,7 @@
               />
             </div>
             <!-- Accepting Remember -->
-            <div class="form__group--remember checkbox" >
+            <div class="form__group--remember checkbox">
               <label for="remember">Remember me</label>
               <input type="checkbox" name="remember" id="remember" />
             </div>
@@ -64,14 +69,13 @@
           </div>
         </section>
       </main>
-
-      <footer class="footer">
-        <ul class="footer__links">
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#"> User Conditions</a></li>
-          <li><a href="#">Cookies</a></li>
-        </ul>
-      </footer>
     </div>
+    <footer class="footer">
+      <ul class="footer__links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#"> User Conditions</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
