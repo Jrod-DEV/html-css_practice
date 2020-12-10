@@ -1,23 +1,24 @@
 .footer {
-    background: var(--soft-black);
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 8rem;
+  background: var(--soft-black);
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 8rem;
 }
 
 footer .footer__links li {
-    list-style: none;
-    line-height: 2.5rem;
-    text-align: center;
+  list-style: none;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.6rem;
+  color: var(--grey-info);
+
+  text-decoration: none;
+  font-size: 1.6rem;
 }
 
 footer a:hover {
-    color: var(--grey-info);
+  color: white;
 }
