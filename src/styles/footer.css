@@ -1,24 +1,27 @@
-.footer {
-  background: var(--soft-black);
-  position: absolute;
-  bottom: 0;
+.footer__container {
+  display: inline-block;
   width: 100vw;
-  height: 8rem;
-}
-
-footer .footer__links li {
-  list-style: none;
-  line-height: 2.5rem;
+  height: 100vh;
+  background: var(--soft-black);
+  bottom: 0;
   text-align: center;
 }
 
-footer a {
-  color: var(--grey-info);
-
-  text-decoration: none;
-  font-size: 1.6rem;
+.footer__links {
+  margin-top: 20px;
 }
 
-footer a:hover {
+.footer__links li {
+  display: inline;
+  margin-left: 10px ;
+}
+
+.footer__links a {
+  color: var(--grey-info);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.footer__links a:hover {
   color: white;
 }

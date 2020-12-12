@@ -1,7 +1,7 @@
 .login__container {
   display: block;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 header {
@@ -27,6 +27,7 @@ main {
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: calc(100vh - 170px);
   padding: 20px 10px;
   margin-top: 20px; /* @media margin-top: 50px; */
 }
@@ -49,7 +50,7 @@ main {
 .login__form a {
   font-size: 1.6rem;
   text-decoration: none;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .form {
@@ -108,8 +109,14 @@ input[type='submit'] {
   background: var(--green-button);
 }
 
+.login__form .form__actions {
+  display: inline-block;
+  text-align: center;
+}
+
 .login__form .no__password a {
-    text-align: center;
+  display: inherit;
+  text-align: center;
 }
 
 input[type='checkbox' i] {
@@ -120,4 +127,10 @@ input[type='checkbox' i] {
   font-size: 1.4rem;
   margin-top: 2.4rem;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../images/background.jpg);
+  }
 }
