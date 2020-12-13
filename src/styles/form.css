@@ -1,0 +1,97 @@
+.login__form {
+    min-width: 315px;
+    max-width: 380px;
+    height: 435px;
+    padding: 10px;
+    margin-top: 15px;
+   /*  background: var(--transparent-black);
+    color: black; */
+  }
+  
+  .login__form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+  }
+  
+  .login__form a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login__form label {
+    display: block;
+    line-height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  
+  .form__group input {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form__group--textbox {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .login__form checkbox {
+    margin-left: 10px;
+  }
+  
+  .login__form .form__group--remember {
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: baseline;
+    justify-content: center;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 1.6rem;
+  }
+  
+  input[type='submit'] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 1rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 20px;
+    background: var(--green-button);
+  }
+  
+  .login__form .form__actions {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .login__form .no__password a {
+    display: inherit;
+    text-align: center;
+  }
+  
+  input[type='checkbox' i] {
+    margin-left: 10px;
+  }
+  
+  .signup {
+    font-size: 1.4rem;
+    margin-top: 2.4rem;
+    text-align: center;
+  }

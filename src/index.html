@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicFilms - Index</title>
     <link rel="icon" href="images/favicon/favicon.ico" />
-    
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/cards.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
@@ -39,35 +42,31 @@
         </div>
       </nav>
     </header>
-
-    <main class="main">
+    <main class="main__container">
       <!-- TRENDING SECTION -->
       <section class="card__list" id="trending">
-        <h1 class="card__list--title">Trending</h1>
-
         <!-- CARD 0 -->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
+        <article>
+          <h1 class="card__list--title">Trending</h1>
+          <a class="info__card" href="detail.html">
+            <figure class="info__card--cover">
               <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
+            </figure>
             <div class="card__content">
               <span class="card__content--rating">IMDB 4.7</span>
               <span class="card__content--age">+14</span>
               <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
+              <p class="card__content--description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
                 nam ullam culpa assumenda vel cumque repellendus.
               </p>
-            </div>
           </a>
+            </div>
         </article>
 
         <!-- CARD 1 -->
-        <article class="info__card--favorite">
-          <a href="detail.html">
+        <article>
+          <a  class="info__card--favorite"href="detail.html">
             <div class="info__card--cover">
               <img src="images/movie_cover/el padrino.jpg" alt="EL PADRINO" />
             </div>
@@ -86,8 +85,8 @@
         </article>
 
         <!-- CARD 2-->
-        <article class="info__card">
-          <a href="detail.html">
+        <article>
+          <a class="info__card" href="detail.html">
             <div class="info__card--cover">
               <img src="images/movie_cover/el pianista.jpg" alt="El pianista" />
             </div>
@@ -106,8 +105,8 @@
         </article>
 
         <!-- CARD 3-->
-        <article class="info__card">
-          <a href="detail.html">
+        <article>
+          <a class="info__card" href="detail.html">
             <div class="info__card--cover">
               <img
                 src="images/movie_cover/hombres de honor.jpg"
@@ -152,8 +151,8 @@
         </article>
 
         <!-- CARD 5-->
-        <article class="info__card">
-          <a href="detail.html">
+        <article>
+          <a class="info__card" href="detail.html">
             <div class="info__card--cover">
               <img
                 src="images/movie_cover/salvar al soldado ryan.jpg"
