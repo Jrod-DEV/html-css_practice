@@ -32,6 +32,7 @@ main {
   min-width: 300px;
   max-width: 480px;
   margin: auto;
+  color: var(--spoty-color);
 }
 
 .form__group {
@@ -39,9 +40,13 @@ main {
   margin: 1.2rem;
 }
 
+.signup p {
+  font-size: 1.6rem;
+}
+
 @media (min-width: 768px) {
   .login__container {
-    background-image: url(../images/background.jpg) center center;
+    background: url(../images/camera.jpg) center center;
     background-size: cover;
   }
 

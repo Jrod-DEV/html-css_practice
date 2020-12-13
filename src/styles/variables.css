@@ -1,5 +1,5 @@
 :root {
-    --background-color: #d66234;
+    --background-color: #2D46B8;
     --transparent-black: #000000cc;
     --title-color: #222326;
     --soft-black: #110f0f;
@@ -8,4 +8,5 @@
     --font-color: #ffffff;
     --header-height: 11rem;
     --footer-height: 5rem;
+    --spoty-color: #1ED760;
 }
