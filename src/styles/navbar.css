@@ -1,5 +1,5 @@
 .navbar {
-  height: 13rem;
+  height: 15rem;
   width: 100vw;
   background: var(--soft-black);
 }
@@ -10,9 +10,6 @@
 }
 
 /* Menu */
-.navbar .burger__menu {
-  width: 60px;
-}
 
 .checkbtn {
   float: right;
@@ -23,7 +20,7 @@
 }
 
 .checkbtn svg {
-  width: 55px;
+  width: 50px;
 }
 
 #check {
@@ -54,7 +51,7 @@
 
 a .active,
 a:hover {
-  background: #1199bb;
+  background: var(--spoty-color);
   transition: 0.5s;
 }
 
@@ -63,79 +60,37 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 54px;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  padding-left: 10px;
-  height: 40px;
-  border-radius: 30px;
 }
 
 .search__text {
-  width: 0;
-  border:  0px solid;
-  border-radius: 30px;
+  width: 200px;
+  margin-left: 10px;
+  line-height: 30px;
+  border: 1px solid;
   outline: none;
-  line-height: 60px;
-  float: left;
-  font-size: 2rem;
-  background: var(--background-color);
-  color: var(--spoty-color);
-  transition: 0.3s;
-}
-
-.search__button {
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
+  background: black;
+  border-radius: 20px;
   color: white;
-  font-size: 2.4rem;
 }
 
+.icon-search {
+  font-size: 1.6rem;
+  margin-left: 5px;
+  color: white;
+}
 /* RESPONSIVE */
 
-@media (min-width: 480px) {
-  .search:hover > .search__text {
-    width: 190px;
-  }
-}
+/* Logo EPIC FILMS responsive */
 
 @media (min-width: 768px) {
   .navbar .logo {
     float: left;
-    padding-left: 50px;
     width: 175px;
   }
-  .search {
-    left: 75%;
-    top: 53px;
-  }
-
-  .search__text {
-    width: 200px;
-    line-height: 40px;
-  }
-
-  .search:hover > .search__text {
-    width: 300px;
-  }
-  .navbar ul li a {
-    font-size: 2rem;
-    font-weight: bold;
-  }
 }
 
-@media (min-width: 1024px) {
-  .search {
-    left: 45%;
-  }
-  .search:hover > .search__text {
-    width: 300px; 
-  }
-}
 /* Menu responsive */
+
 @media (max-width: 768px) {
   .checkbtn {
     display: block;
@@ -158,7 +113,7 @@ a:hover {
   .navbar ul li a {
     font-size: 2rem;
   }
-  
+
   #check:checked ~ ul {
     left: 0;
   }
