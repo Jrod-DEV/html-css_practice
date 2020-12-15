@@ -3,448 +3,421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EpicFilms - Index</title>
-    <link rel="icon" href="images/favicon/favicon.ico" />
+    <title>EpicFilms - Home</title>
+    
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/cards.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="./search-icon/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar" id="nabvar">
-        <div class="logo">
-          <figure>
-            <a href="index.html"
-              ><img src="images/logo/epicfilms_blanco.png" alt="White-logo"
-            /></a>
-          </figure>
+    <header class="header">
+      <nav class="navbar">
+          <img
+            class="logo"
+            src="./images/logo/epicfilms_blanco.png"
+            alt="EpicFilms"
+          />
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 128 128" width="64px" height="64px"><path fill="#fff" d="M64 14A50 50 0 1 0 64 114A50 50 0 1 0 64 14Z"/><path fill="#444b54" d="M64,117c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S93.2,117,64,117z M64,17c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S89.9,17,64,17z"/><path fill="#444b54" d="M86.5 52h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 52 86.5 52zM86.5 67h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 67 86.5 67z"/><g><path fill="#444b54" d="M86.5,82h-45c-1.7,0-3-1.3-3-3s1.3-3,3-3h45c1.7,0,3,1.3,3,3S88.2,82,86.5,82z"/></g></svg>
+        </label>
+        <div class="search">
+          <input type="search" class="search__text" id="search" placeholder="Search films">
+          <a href="" class="search__button">
+            <i class="icon-search"></i>
+          </a>
         </div>
-        <div class="navbar__menu">
-          <div class="navbar__menu--profile">
-            <img src="https://img.icons8.com/color/48/000000/menu--v1.png" />
-          </div>
-          <ul class="navbar__menu--list">
-            <li class="nabvar__list--item"><a href="#trending">Trending</a></li>
-            <li class="nabvar__list--item"><a href="#series">Series</a></li>
-            <li class="nabvar__list--item"><a href="#movies">Movies</a></li>
-            <li class="nabvar__list--item"><a href="#">My profile</a></li>
-            <li class="nabvar__list--item">
-              <a href="login.html">Sign out</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="menu__list">
+          <li><a class="active" href="#">Home </a></li>
+          <li><a class="active" href="#">About</a></li>
+          <li><a class="active" href="#">Services</a></li>
+          <li><a class="active" href="#"><a href="#">Log out</a></li>
+        </ul>
       </nav>
     </header>
-    <main class="main__container">
-      <!-- TRENDING SECTION -->
-      <section class="card__list" id="trending">
-        <!-- CARD 0 -->
-        <article>
-          <h1 class="card__list--title">Trending</h1>
-          <a class="info__card" href="detail.html">
-            <figure class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </figure>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-              <p class="card__content--description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-          </a>
-            </div>
-        </article>
 
-        <!-- CARD 1 -->
-        <article>
-          <a  class="info__card--favorite"href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/el padrino.jpg" alt="EL PADRINO" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 2-->
-        <article>
-          <a class="info__card" href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/el pianista.jpg" alt="El pianista" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 3-->
-        <article>
-          <a class="info__card" href="detail.html">
-            <div class="info__card--cover">
-              <img
-                src="images/movie_cover/hombres de honor.jpg"
-                alt="Hombres De Honor"
-              />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 4-->
-        <article class="info__card">
+    <main class="main">
+      <section class="trending container">
+        <h1 class="section-title">Trending</h1>
+        <!-- Card1-->
+        <article class="card">
           <a href="detail.html">
-            <div class="info__card--cover">
+            <div class="card__cover">
               <img
-                src="images/movie_cover/la milla verde.jpg"
-                alt="La Milla Verde"
-              />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 5-->
-        <article>
-          <a class="info__card" href="detail.html">
-            <div class="info__card--cover">
-              <img
-                src="images/movie_cover/salvar al soldado ryan.jpg"
+                src="./images/movie_cover/soldadoRyan.jpg"
                 alt="Salvar al soldado Ryan"
               />
             </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Salvar al soldado Ryan</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
             </div>
           </a>
         </article>
-
-        <!-- CARD 6-->
-        <article class="info__card">
+        <!-- Card2-->
+        <article class="card">
           <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/titanic.jpg" alt="Titanic" />
+            <div class="card__cover">
+              <img src="./images/movie_cover/pianista.jpg" alt="El Pianista" />
             </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>El Pianista</span>
+                <span class="card__info--fav">Fav-pesudoElement</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
             </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
+          </a>
+        </article>
+        <!-- Card3 Fav -->
+        <article class="card favorite">
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/hombresDeHonor.jpg"
+                alt="Salvar al soldado Ryan"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Hombres De Honor</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card4-->
+        <article class="card">
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/braveheart.jpg"
+                alt="Salvar al soldado Ryan"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Braveheart</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Test -->
+                <!-- Card1-->
+                <article class="card">
+                  <a href="detail.html">
+                    <div class="card__cover">
+                      <img
+                        src="./images/movie_cover/soldadoRyan.jpg"
+                        alt="Salvar al soldado Ryan"
+                      />
+                    </div>
+                    <div class="card__info">
+                      <div class="card__info--title">
+                        <span>Salvar al soldado Ryan</span>
+                      </div>
+                      <div class="card__info--data">
+                        <span class="imdb">7.8</span>
+                        <span class="age">+16</span>
+                        <span class="year">2007</span>
+                      </div>
+                      <div class="card__info--resume">
+                        Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                        cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                        beatae non quibusdam laudantium sed ad provident maiores.
+                      </div>
+                    </div>
+                  </a>
+                </article>        <!-- Card1-->
+                <article class="card">
+                  <a href="detail.html">
+                    <div class="card__cover">
+                      <img
+                        src="./images/movie_cover/soldadoRyan.jpg"
+                        alt="Salvar al soldado Ryan"
+                      />
+                    </div>
+                    <div class="card__info">
+                      <div class="card__info--title">
+                        <span>Salvar al soldado Ryan</span>
+                      </div>
+                      <div class="card__info--data">
+                        <span class="imdb">7.8</span>
+                        <span class="age">+16</span>
+                        <span class="year">2007</span>
+                      </div>
+                      <div class="card__info--resume">
+                        Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                        cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                        beatae non quibusdam laudantium sed ad provident maiores.
+                      </div>
+                    </div>
+                  </a>
+                </article>
+      </section>
+      <!-- Movies -->
+      <section class="trending container">
+        <h1 class="section-title">Movies</h1>
+        <!-- Card1-->
+        <article class="card">
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/soldadoRyan.jpg"
+                alt="Salvar al soldado Ryan"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Salvar al soldado Ryan</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card2-->
+        <article class="card">
+          <a href="detail.html">
+            <div class="card__cover">
+              <img src="./images/movie_cover/pianista.jpg" alt="El Pianista" />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>El Pianista</span>
+                <span class="card__info--fav">Fav-pesudoElement</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card3 Fav -->
+        <article class="card favorite">
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/hombresDeHonor.jpg"
+                alt="Salvar al soldado Ryan"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Hombres De Honor</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card4-->
+        <article class="card">
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/braveheart.jpg"
+                alt="Salvar al soldado Ryan"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Braveheart</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
             </div>
           </a>
         </article>
       </section>
-
-      <!-- SERIES SECTION -->
-      <section class="card__list" id="Series">
-        <h1 class="card__list--title">Series</h1>
-
-        <!-- CARD 7-->
-        <article class="info__card">
+      <!-- Related -->
+      <section class="trending container">
+        <h1 class="section-title">Series</h1>
+        <!-- Card1-->
+        <article class="card">
           <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/soldadoRyan.jpg"
+                alt="Salvar al soldado Ryan"
+              />
             </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Salvar al soldado Ryan</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
             </div>
           </a>
         </article>
-
-        <!-- CARD 8-->
-        <article class="info__card">
+        <!-- Card2-->
+        <article class="card">
           <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
+            <div class="card__cover">
+              <img src="./images/movie_cover/pianista.jpg" alt="El Pianista" />
             </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>El Pianista</span>
+                <span class="card__info--fav">Fav-pesudoElement</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
             </div>
           </a>
         </article>
-
-        <!-- CARD 9-->
-        <article class="info__card">
+        <!-- Card3 Fav -->
+        <article class="card favorite">
           <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/hombresDeHonor.jpg"
+                alt="Salvar al soldado Ryan"
+              />
             </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Hombres De Honor</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
             </div>
           </a>
         </article>
-
-        <!-- CARD 10-->
-        <article class="info__card">
+        <!-- Card4-->
+        <article class="card">
           <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/braveheart.jpg"
+                alt="Salvar al soldado Ryan"
+              />
             </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 11-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 12-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-      </section>
-
-      <!-- MOVIES SECTION -->
-      <section class="info__card" id="Movies">
-        <h1 class="card__list--title">Movies</h1>
-
-        <!-- CARD 13-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 14-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 15-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 16-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 17-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
-            </div>
-          </a>
-        </article>
-
-        <!-- CARD 18-->
-        <article class="info__card">
-          <a href="detail.html">
-            <div class="info__card--cover">
-              <img src="images/movie_cover/braveheart.jpg" alt="Braveheart" />
-            </div>
-            <div class="card__content">
-              <span class="card__content--rating">IMDB 4.7</span>
-              <span class="card__content--age">+14</span>
-              <span class="card__content--date">1991</span>
-            </div>
-            <div class="card__description">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.. Iure,
-                nam ullam culpa assumenda vel cumque repellendus.
-              </p>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Braveheart</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
+                beatae non quibusdam laudantium sed ad provident maiores.
+              </div>
             </div>
           </a>
         </article>
       </section>
     </main>
-
     <footer class="footer">
       <ul class="footer__links">
         <li><a href="#">Privacy</a></li>

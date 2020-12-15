@@ -1,7 +1,3 @@
-body {
-  background: var(--background-color);
-}
-
 .login__container {
   display: flex;
   flex-direction: column;

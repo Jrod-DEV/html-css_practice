@@ -1,0 +1,165 @@
+.navbar {
+  height: 13rem;
+  width: 100vw;
+  background: var(--soft-black);
+}
+
+/* Logo Epic Films */
+.navbar .logo {
+  width: 130px;
+}
+
+/* Menu */
+.navbar .burger__menu {
+  width: 60px;
+}
+
+.checkbtn {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbtn svg {
+  width: 55px;
+}
+
+#check {
+  display: none;
+}
+
+.navbar ul {
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+  z-index: 3;
+  opacity: 0.9;
+}
+
+.navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  font-size: 1.6rem;
+  padding: 7px 13px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+a .active,
+a:hover {
+  background: #1199bb;
+  transition: 0.5s;
+}
+
+/* Search form */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 54px;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.search__text {
+  width: 0;
+  border:  0px solid;
+  border-radius: 30px;
+  outline: none;
+  line-height: 60px;
+  float: left;
+  font-size: 2rem;
+  background: var(--background-color);
+  color: var(--spoty-color);
+  transition: 0.3s;
+}
+
+.search__button {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 2.4rem;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 480px) {
+  .search:hover > .search__text {
+    width: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar .logo {
+    float: left;
+    padding-left: 50px;
+    width: 175px;
+  }
+  .search {
+    left: 75%;
+    top: 53px;
+  }
+
+  .search__text {
+    width: 200px;
+    line-height: 40px;
+  }
+
+  .search:hover > .search__text {
+    width: 300px;
+  }
+  .navbar ul li a {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search {
+    left: 45%;
+  }
+  .search:hover > .search__text {
+    width: 300px; 
+  }
+}
+/* Menu responsive */
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+  .menu__list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c2c2c;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .navbar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .navbar ul li a {
+    font-size: 2rem;
+  }
+  
+  #check:checked ~ ul {
+    left: 0;
+  }
+}

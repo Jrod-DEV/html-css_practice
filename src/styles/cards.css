@@ -1,0 +1,59 @@
+.card a {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.card__info {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.card:hover .card__info {
+  display: flex;
+  flex-wrap: column;
+  align-items: center;
+}
+
+.card__info--data,
+.card__info--resume {
+  width: 80px;
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.card__info--title {
+    position: absolute;
+    top: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: yellow;
+}
+
+
+.card__info--resume {
+    position: absolute;
+    top: 70px;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: white;
+    width: auto;
+    height: 80px;
+}
+
+.card__info--data {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.6rem;
+  color: yellow;
+}
