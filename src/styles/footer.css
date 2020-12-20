@@ -1,8 +1,10 @@
+.footer,
 .footer__container {
+  width: 100vw;
   flex: 1 15%;
-  background: var(--soft-black)
+  background: var(--soft-black);
 
-/*   display: inline-block;
+  /*   display: inline-block;
   width: 100vw;
   height: 100%;
   background: var(--soft-black);
@@ -21,7 +23,7 @@
 
 .footer__links li {
   display: inline;
-  margin-left: 10px ;
+  margin-left: 10px;
 }
 
 .footer__links a {

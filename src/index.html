@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EpicFilms - Home</title>
-    
+
     <link rel="icon" href="./images/favicon/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
-    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/cards.css" />
     <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/common.css" />
@@ -23,26 +23,47 @@
   <body>
     <header class="header">
       <nav class="navbar">
-          <img
-            class="logo"
-            src="./images/logo/epicfilms_blanco.png"
-            alt="EpicFilms"
-          />
-        <input type="checkbox" id="check">
+        <img
+          class="logo"
+          src="./images/logo/epicfilms_blanco.png"
+          alt="EpicFilms"
+        />
+        <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
-          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 128 128" width="64px" height="64px"><path fill="#fff" d="M64 14A50 50 0 1 0 64 114A50 50 0 1 0 64 14Z"/><path fill="#444b54" d="M64,117c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S93.2,117,64,117z M64,17c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S89.9,17,64,17z"/><path fill="#444b54" d="M86.5 52h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 52 86.5 52zM86.5 67h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 67 86.5 67z"/><g><path fill="#444b54" d="M86.5,82h-45c-1.7,0-3-1.3-3-3s1.3-3,3-3h45c1.7,0,3,1.3,3,3S88.2,82,86.5,82z"/></g></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 128"
+            width="64px"
+            height="64px"
+          >
+            <path
+              fill="#fff"
+              d="M64 14A50 50 0 1 0 64 114A50 50 0 1 0 64 14Z"
+            />
+            <path
+              fill="#444b54"
+              d="M64,117c-29.2,0-53-23.8-53-53s23.8-53,53-53s53,23.8,53,53S93.2,117,64,117z M64,17c-25.9,0-47,21.1-47,47s21.1,47,47,47s47-21.1,47-47S89.9,17,64,17z"
+            />
+            <path
+              fill="#444b54"
+              d="M86.5 52h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 52 86.5 52zM86.5 67h-45c-1.7 0-3-1.3-3-3s1.3-3 3-3h45c1.7 0 3 1.3 3 3S88.2 67 86.5 67z"
+            />
+            <g>
+              <path
+                fill="#444b54"
+                d="M86.5,82h-45c-1.7,0-3-1.3-3-3s1.3-3,3-3h45c1.7,0,3,1.3,3,3S88.2,82,86.5,82z"
+              />
+            </g>
+          </svg>
         </label>
         <!-- Buscador header -->
         <form class="search">
-          <input type="search" class="search__text" id="search" placeholder="Search">
+          <input type="search" class="search__text" id="search" />
           <a href="" class="search__button">
             <i class="icon-search"></i>
           </a>
         </form>
         <ul class="menu__list">
-          <li>
-
-          </li>
           <li><a class="active" href="#">Home </a></li>
           <li><a class="active" href="#">About</a></li>
           <li><a class="active" href="#">Services</a></li>
@@ -52,44 +73,77 @@
     </header>
 
     <main class="main">
-      <section class="trending container">
-        <h1 class="section-title">Trending</h1>
+      <h1>Keep watching</h1>
+      <section class="container">
         <!-- Card1-->
         <article class="card">
+          <!-- Favorite heart -->
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
               <img
-                src="./images/movie_cover/soldadoRyan.jpg"
-                alt="Salvar al soldado Ryan"
+                src="./images/movie_cover/bjørklie.jpg"
+                alt="Inferno Dreams"
               />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Salvar al soldado Ryan</span>
+                <span>Inferno Dreams</span>
               </div>
               <div class="card__info--data">
-                <span class="imdb">7.8</span>
+                <span class="imdb">IMDB 7.8</span>
                 <span class="age">+16</span>
                 <span class="year">2007</span>
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam?
               </div>
             </div>
           </a>
         </article>
         <!-- Card2-->
-        <article class="card">
+        <article class="card favorite">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
-              <img src="./images/movie_cover/pianista.jpg" alt="El Pianista" />
+              <img src="./images/movie_cover/clive.jpg" alt="Litle Rites" />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>El Pianista</span>
-                <span class="card__info--fav">Fav-pesudoElement</span>
+                <span>Litle Rites</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -98,24 +152,37 @@
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam?
               </div>
             </div>
           </a>
         </article>
         <!-- Card3 Fav -->
-        <article class="card favorite">
+        <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
-              <img
-                src="./images/movie_cover/hombresDeHonor.jpg"
-                alt="Salvar al soldado Ryan"
-              />
+              <img src="./images/movie_cover/ice.jpg" alt="Ice" />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Hombres De Honor</span>
+                <span>Ice</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -124,24 +191,37 @@
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam?
               </div>
             </div>
           </a>
         </article>
         <!-- Card4-->
         <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
-              <img
-                src="./images/movie_cover/braveheart.jpg"
-                alt="Salvar al soldado Ryan"
-              />
+              <img src="./images/movie_cover/luck.jpg" alt="Trap the Truth" />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Braveheart</span>
+                <span>Trap the Truth</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -150,130 +230,37 @@
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam.
               </div>
             </div>
           </a>
         </article>
-        <!-- Test -->
-                <!-- Card1-->
-                <article class="card">
-                  <a href="detail.html">
-                    <div class="card__cover">
-                      <img
-                        src="./images/movie_cover/soldadoRyan.jpg"
-                        alt="Salvar al soldado Ryan"
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info--title">
-                        <span>Salvar al soldado Ryan</span>
-                      </div>
-                      <div class="card__info--data">
-                        <span class="imdb">7.8</span>
-                        <span class="age">+16</span>
-                        <span class="year">2007</span>
-                      </div>
-                      <div class="card__info--resume">
-                        Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                        cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                        beatae non quibusdam laudantium sed ad provident maiores.
-                      </div>
-                    </div>
-                  </a>
-                </article>        <!-- Card1-->
-                <article class="card">
-                  <a href="detail.html">
-                    <div class="card__cover">
-                      <img
-                        src="./images/movie_cover/soldadoRyan.jpg"
-                        alt="Salvar al soldado Ryan"
-                      />
-                    </div>
-                    <div class="card__info">
-                      <div class="card__info--title">
-                        <span>Salvar al soldado Ryan</span>
-                      </div>
-                      <div class="card__info--data">
-                        <span class="imdb">7.8</span>
-                        <span class="age">+16</span>
-                        <span class="year">2007</span>
-                      </div>
-                      <div class="card__info--resume">
-                        Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                        cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                        beatae non quibusdam laudantium sed ad provident maiores.
-                      </div>
-                    </div>
-                  </a>
-                </article>
-      </section>
-      <!-- Movies -->
-      <section class="trending container">
-        <h1 class="section-title">Movies</h1>
-        <!-- Card1-->
-        <article class="card">
-          <a href="detail.html">
-            <div class="card__cover">
-              <img
-                src="./images/movie_cover/soldadoRyan.jpg"
-                alt="Salvar al soldado Ryan"
-              />
-            </div>
-            <div class="card__info">
-              <div class="card__info--title">
-                <span>Salvar al soldado Ryan</span>
-              </div>
-              <div class="card__info--data">
-                <span class="imdb">7.8</span>
-                <span class="age">+16</span>
-                <span class="year">2007</span>
-              </div>
-              <div class="card__info--resume">
-                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
-              </div>
-            </div>
-          </a>
-        </article>
-        <!-- Card2-->
-        <article class="card">
-          <a href="detail.html">
-            <div class="card__cover">
-              <img src="./images/movie_cover/pianista.jpg" alt="El Pianista" />
-            </div>
-            <div class="card__info">
-              <div class="card__info--title">
-                <span>El Pianista</span>
-                <span class="card__info--fav">Fav-pesudoElement</span>
-              </div>
-              <div class="card__info--data">
-                <span class="imdb">7.8</span>
-                <span class="age">+16</span>
-                <span class="year">2007</span>
-              </div>
-              <div class="card__info--resume">
-                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
-              </div>
-            </div>
-          </a>
-        </article>
-        <!-- Card3 Fav -->
+        <!-- Card 5 -->
         <article class="card favorite">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
-              <img
-                src="./images/movie_cover/hombresDeHonor.jpg"
-                alt="Salvar al soldado Ryan"
-              />
+              <img src="./images/movie_cover/rak.jpg" alt="Atlantis Firing" />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Hombres De Honor</span>
+                <span>Atlantis Firing</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -282,24 +269,40 @@
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam.
               </div>
             </div>
           </a>
         </article>
-        <!-- Card4-->
+        <!-- Card 6 -->
         <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
               <img
-                src="./images/movie_cover/braveheart.jpg"
-                alt="Salvar al soldado Ryan"
+                src="./images/movie_cover/grossgasteiger.jpg"
+                alt="Unseen Angel"
               />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Braveheart</span>
+                <span>Unseen Angel</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -308,52 +311,82 @@
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam.
               </div>
             </div>
           </a>
         </article>
       </section>
-      <!-- Related -->
-      <section class="trending container">
-        <h1 class="section-title">Series</h1>
+      <h1>Popular</h1>
+      <section class="container">
         <!-- Card1-->
-        <article class="card">
+        <article class="card favorite">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
               <img
-                src="./images/movie_cover/soldadoRyan.jpg"
-                alt="Salvar al soldado Ryan"
+                src="./images/movie_cover/bjørklie.jpg"
+                alt="Inferno Dreams"
               />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Salvar al soldado Ryan</span>
+                <span>Inferno Dreams</span>
               </div>
               <div class="card__info--data">
-                <span class="imdb">7.8</span>
+                <span class="imdb">IMDB 7.8</span>
                 <span class="age">+16</span>
                 <span class="year">2007</span>
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam.
               </div>
             </div>
           </a>
         </article>
         <!-- Card2-->
         <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
-              <img src="./images/movie_cover/pianista.jpg" alt="El Pianista" />
+              <img src="./images/movie_cover/clive.jpg" alt="Litle Rites" />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>El Pianista</span>
-                <span class="card__info--fav">Fav-pesudoElement</span>
+                <span>Litle Rites</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -362,24 +395,280 @@
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card 3 Fav -->
+        <article class="card favorite">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img src="./images/movie_cover/ice.jpg" alt="Ice" />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Ice</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card4-->
+        <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img src="./images/movie_cover/luck.jpg" alt="Trap the Truth" />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Trap the Truth</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card 5 -->
+        <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img src="./images/movie_cover/rak.jpg" alt="Atlantis Firing" />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Atlantis Firing</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card 6 -->
+        <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/grossgasteiger.jpg"
+                alt="Unseen Angel"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Unseen Angel</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+      <h1>Suggested</h1>
+      <section class="container">
+        <!-- Card1-->
+        <article class="card favorite">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/bjørklie.jpg"
+                alt="Inferno Dreams"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Inferno Dreams</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">IMDB 7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card2-->
+        <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img src="./images/movie_cover/clive.jpg" alt="Litle Rites" />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Litle Rites</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
               </div>
             </div>
           </a>
         </article>
         <!-- Card3 Fav -->
         <article class="card favorite">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
-              <img
-                src="./images/movie_cover/hombresDeHonor.jpg"
-                alt="Salvar al soldado Ryan"
-              />
+              <img src="./images/movie_cover/ice.jpg" alt="Ice" />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Hombres De Honor</span>
+                <span>Ice</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -396,16 +685,30 @@
         </article>
         <!-- Card4-->
         <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
           <a href="detail.html">
             <div class="card__cover">
-              <img
-                src="./images/movie_cover/braveheart.jpg"
-                alt="Salvar al soldado Ryan"
-              />
+              <img src="./images/movie_cover/luck.jpg" alt="Trap the Truth" />
             </div>
             <div class="card__info">
               <div class="card__info--title">
-                <span>Braveheart</span>
+                <span>Trap the Truth</span>
               </div>
               <div class="card__info--data">
                 <span class="imdb">7.8</span>
@@ -414,8 +717,88 @@
               </div>
               <div class="card__info--resume">
                 Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
-                cum iste voluptatem aliquid, quam nihil aperiam? Molestias
-                beatae non quibusdam laudantium sed ad provident maiores.
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card 5 -->
+        <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img src="./images/movie_cover/rak.jpg" alt="Atlantis Firing" />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Atlantis Firing</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- Card 6 -->
+        <article class="card">
+          <span class="heart">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="heart"
+              class="svg-inline--fa fa-heart fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+              ></path>
+            </svg>
+          </span>
+          <a href="detail.html">
+            <div class="card__cover">
+              <img
+                src="./images/movie_cover/grossgasteiger.jpg"
+                alt="Unseen Angel"
+              />
+            </div>
+            <div class="card__info">
+              <div class="card__info--title">
+                <span>Unseen Angel</span>
+              </div>
+              <div class="card__info--data">
+                <span class="imdb">7.8</span>
+                <span class="age">+16</span>
+                <span class="year">2007</span>
+              </div>
+              <div class="card__info--resume">
+                Lorem ipsum dolor sit amet consectetur elit. Incidunt nisi quo
+                cum iste voluptatem aliquid, quam nihil aperiam.
               </div>
             </div>
           </a>

@@ -1,4 +1,7 @@
 .login__form {
+  margin: auto;
+  color: var(--spoty-color);
+  /* ---- */
     min-width: 315px;
     max-width: 380px;
     height: 435px;
@@ -99,8 +102,16 @@
   }
 
   @media (min-width: 768px) {
+    .login__form {
+      color: white;
+    }
     .login__form a {
       color: purple;
       font-weight: 600;
+    }
+    @media (min-width: 768px) {
+      .login__form {
+        margin-top: 80px;
+      }
     }
   }
