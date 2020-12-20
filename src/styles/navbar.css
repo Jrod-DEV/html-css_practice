@@ -29,6 +29,7 @@
 
 .navbar ul {
   float: right;
+  top: 148px;
   margin-right: 20px;
   z-index: 3;
   opacity: 0.9;

@@ -1,6 +1,7 @@
 .footer,
 .footer__container {
   width: 100vw;
+  height: 15rem;
   flex: 1 15%;
   background: var(--soft-black);
 
