@@ -60,6 +60,7 @@ body {
     grid-template-rows: auto;
     gap: 20px;
   }
+  
   @media (min-width: 1240px) {
     .container {
       grid-template-columns: repeat(6, 1fr);

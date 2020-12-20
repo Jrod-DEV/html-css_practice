@@ -40,7 +40,7 @@
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
-  color: yellow;
+  color: gold;
 }
 
 .card__info--resume {
@@ -58,7 +58,7 @@
   bottom: 10px;
   font-size: 1.6rem;
   font-weight: bold;
-  color: yellow;
+  color: gold;
 }
 
 /* Fav button */
@@ -80,7 +80,7 @@
 }
 
 .favorite svg {
-  color: yellow;
+  color: gold;
 }
 
 /* Responsive */

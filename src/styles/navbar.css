@@ -59,14 +59,11 @@ a .active,
 .search {
   display: flex;
   justify-content: flex-end;
-  margin-right: 40px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  margin-right: 38px;
 }
 
 .search__text {
-  width: 200px;
+  width: 210px;
   margin-left: 10px;
   line-height: 30px;
   border: 1px solid;
@@ -118,6 +115,11 @@ a .active,
     text-align: center;
     transition: all 0.5s;
   }
+
+  .search {
+    margin-right: 32px;
+  }
+
   .navbar ul li {
     display: block;
     margin: 50px 0;
