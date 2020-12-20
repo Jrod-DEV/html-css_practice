@@ -1,5 +1,5 @@
 body {
-  background: var(--background-color);
+  background: var(--background-image);
 }
 
 .login__container {
@@ -26,13 +26,6 @@ header img {
 
 main {
   flex: 1 90%;
-}
-
-/* .login__form {
-  min-width: 300px;
-  max-width: 480px;
-  margin: auto;
-  color: var(--spoty-color); */
 }
 
 .form__group {

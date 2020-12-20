@@ -4,6 +4,7 @@
 }
 
 /* Logo Epic Films */
+
 .navbar .logo {
   width: 130px;
 }
@@ -56,8 +57,11 @@ a .active,
 /* Search form */
 .search {
   display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .search__text {
@@ -86,10 +90,11 @@ a .active,
     width: 175px;
   }
   .search {
-    display: flex;
+    padding-top: 20px;
+/*     display: flex;
     justify-content: flex-end;
     padding: 15px;
-    margin-right: 20px;
+    margin-right: 20px; */
   }
   .search__text {
     width: 335px;

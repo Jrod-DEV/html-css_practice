@@ -106,7 +106,7 @@
       color: white;
     }
     .login__form a {
-      color: purple;
+      color: mediumpurple;
       font-weight: 600;
     }
     @media (min-width: 768px) {
