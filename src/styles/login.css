@@ -1,5 +1,5 @@
 body {
-  background: var(--background-image);
+  background: var(--background-login);
 }
 
 .login__container {

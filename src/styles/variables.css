@@ -1,5 +1,6 @@
 :root {
     --background-image: linear-gradient(180deg, #aa5d93 0, #b05b8b 7.14%, #b45a83 14.29%, #b7597b 21.43%, #b95873 28.57%, #ba596b 35.71%, #ba5a63 42.86%, #b95b5b 50%, #b75d54 57.14%, #b55f4d 64.29%, #b16246 71.43%, #ad6540 78.57%, #a8683a 85.71%, #a36b36 92.86%, #9d6e32 100%);
+    --background-login: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
     --transparent-black: #000000cc;
     --title-color: #222326;
     --soft-black: #110f0f;

@@ -45,7 +45,7 @@
 
 .card__info--resume {
   position: absolute;
-  top: 70px;
+  top: 40%;
   justify-content: center;
   font-size: 1.4rem;
   width: auto;
@@ -77,14 +77,6 @@
 .heart svg {
   width: 32px;
   color: white;
-  /*
-  position: relative;
-  margin: -1.6rem;
-  color:white;
-  z-index: 1;
-  display: block;
-  top: -44%;
-  left: 40%; */
 }
 
 .favorite svg {
@@ -101,6 +93,6 @@
 
 @media (min-width: 980px) {
   .card__info--resume {
-    top: 50px;
+    top: 70px;
   }
 }
