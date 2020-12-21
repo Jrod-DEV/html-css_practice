@@ -62,6 +62,8 @@ input[type='password'] {
   border-bottom: 2px solid white;
   background: transparent;
   font-size: 1.6rem;
+  color: white;
+  outline: none;
 }
 
 input[type='submit'] {
