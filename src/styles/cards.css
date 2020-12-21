@@ -87,12 +87,12 @@
 
 @media (min-width: 768px) {
   .card__info--resume {
-    top: 110px;
+    top: 50px;
   }
 }
 
 @media (min-width: 980px) {
   .card__info--resume {
-    top: 70px;
+    top: 50px;
   }
 }
