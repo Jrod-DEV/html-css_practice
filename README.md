@@ -18,5 +18,5 @@ Práctica  Módulo HTML y CSS
     3º detail.html
 
         En esta página se dan más datos de la película elegida desde el Home, en la cual mostramos un video (trailer), metadatos de la película y una sinopsis.
-        Para finalizar, tras esta sección, encontramos un aside con recomedaciones en forma de cards para ver más contenido relacioando.
+        Para finalizar, tras esta sección, encontramos un aside con recomedaciones en forma de cards para ver más contenido relacionado.
 
