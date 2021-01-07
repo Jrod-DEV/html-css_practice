@@ -1,9 +1,10 @@
 # html-css_practice
+
 Práctica  Módulo HTML y CSS
 
-#En esta práctica se realizo la contrucción de tres páginas web basandome en HTML y CSS sin ningún tipo de librería extra.
+#En esta práctica se lleva a cabo el desarrollo de tres páginas web basandome en HTML y CSS sin ningún tipo de librería extra. Teniendo en cuenta la semántica en HTML y los diferentes sistemas de posicionamineto y layout que nos proporciona CSS.
 
-#Analizando las tres páginas web, podremos ver que son responsive. Han sido desarrolladas teniendo en cuenta el modelo mobile first, ajustando así los layouts de pantallas pequeñas a más grandes.
+#Analizando las tres páginas web, podremos ver que son responsive. Han sido desarrolladas teniendo en cuenta el modelo mobile first, ajustando así los layouts desde pantallas pequeñas a más grandes.
 
     1º login.html 
 
@@ -19,4 +20,3 @@ Práctica  Módulo HTML y CSS
 
         En esta página se dan más datos de la película elegida desde el Home, en la cual mostramos un video (trailer), metadatos de la película y una sinopsis.
         Para finalizar, tras esta sección, encontramos un aside con recomedaciones en forma de cards para ver más contenido relacionado.
-
