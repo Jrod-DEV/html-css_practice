@@ -2,7 +2,7 @@
 
 Práctica  Módulo HTML y CSS
 
-#En esta práctica se lleva a cabo el desarrollo de tres páginas web basandome en HTML y CSS sin ningún tipo de librería extra. Teniendo en cuenta la semántica en HTML y los diferentes sistemas de posicionamineto y layout que nos proporciona CSS.
+#En esta práctica se lleva a cabo el desarrollo de tres páginas web basadas únicamente en HTML y CSS sin ningún tipo de librería extra, teniendo en cuenta la semántica en HTML y los diferentes sistemas de posicionamineto y layout que nos proporciona CSS.
 
 #Analizando las tres páginas web, podremos ver que son responsive. Han sido desarrolladas teniendo en cuenta el modelo mobile first, ajustando así los layouts desde pantallas pequeñas a más grandes.
 
